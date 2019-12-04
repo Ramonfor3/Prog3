@@ -1,0 +1,58 @@
+﻿@model P.Proyect.Models.VACACIONES
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Detalles de </h2>
+
+<div>
+    <h4>Vacaciones</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Desde)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Desde)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Hasta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Hasta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Correspondiente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Correspondiente)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Comentarios)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Comentarios)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EMPLEADOS.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EMPLEADOS.Nombre)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.Id_Vacaciones }) |
+    @Html.ActionLink("Volver atras", "Index")
+</p>

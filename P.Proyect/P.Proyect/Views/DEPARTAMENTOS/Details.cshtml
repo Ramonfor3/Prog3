@@ -1,0 +1,42 @@
+﻿@model P.Proyect.Models.DEPARTAMENTOS
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Detalles</h2>
+
+<div>
+    <h4>Departamentos</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Codigo_Departamento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Codigo_Departamento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Encargado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Encargado)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.Id_Departamento }) |
+    @Html.ActionLink("Volver atras", "Index")
+</p>

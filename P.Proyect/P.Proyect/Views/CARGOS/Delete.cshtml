@@ -1,0 +1,40 @@
+﻿@model P.Proyect.Models.CARGOS
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Elimar</h2>
+
+<h3>Seguro que desea eliminar este?</h3>
+<div>
+    <h4>Cargos</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Codigo_Cargo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Codigo_Cargo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cargo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cargo)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Eliminar" class="btn btn-default" /> |
+            @Html.ActionLink("Volver atras", "Index")
+        </div>
+    }
+</div>

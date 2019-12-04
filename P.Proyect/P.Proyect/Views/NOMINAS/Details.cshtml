@@ -1,0 +1,42 @@
+﻿@model P.Proyect.Models.NOMINAS
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Detalles de </h2>
+
+<div>
+    <h4>Nomina</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Año)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Año)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Mes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Monto_Total)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Monto_Total)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.Id_Nomina }) |
+    @Html.ActionLink("Volver atras", "Index")
+</p>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="39784f0f79f2461f9a8044f48af75730" Name="Diagram1">
+        <EntityTypeShape EntityType="SISTEMA_RECURSOS_HUMANOSModel2.CARGOS" Width="1.5" PointX="0.75" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SISTEMA_RECURSOS_HUMANOSModel2.DEPARTAMENTOS" Width="1.5" PointX="0.75" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SISTEMA_RECURSOS_HUMANOSModel2.EMPLEADOS" Width="1.5" PointX="3" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SISTEMA_RECURSOS_HUMANOSModel2.LICENCIA" Width="1.5" PointX="5.25" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SISTEMA_RECURSOS_HUMANOSModel2.NOMINAS" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SISTEMA_RECURSOS_HUMANOSModel2.PERMISOS" Width="1.5" PointX="5.25" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SISTEMA_RECURSOS_HUMANOSModel2.SALIDA_EMPLEADO" Width="1.5" PointX="5.25" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SISTEMA_RECURSOS_HUMANOSModel2.VACACIONES" Width="1.5" PointX="5.25" PointY="10.5" IsExpanded="true" />
+        <AssociationConnector Association="SISTEMA_RECURSOS_HUMANOSModel2.FK_Id_Cargo" ManuallyRouted="false" />
+        <AssociationConnector Association="SISTEMA_RECURSOS_HUMANOSModel2.FK_Id_Departamento1" ManuallyRouted="false" />
+        <AssociationConnector Association="SISTEMA_RECURSOS_HUMANOSModel2.FK_Codigo_Empleado" ManuallyRouted="false" />
+        <AssociationConnector Association="SISTEMA_RECURSOS_HUMANOSModel2.FK_Codigo_Empleado1" ManuallyRouted="false" />
+        <AssociationConnector Association="SISTEMA_RECURSOS_HUMANOSModel2.FK_Codigo_Empleado2" ManuallyRouted="false" />
+        <AssociationConnector Association="SISTEMA_RECURSOS_HUMANOSModel2.FK_Codigo_Empleado3" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
